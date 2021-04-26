@@ -22,8 +22,6 @@ automation: !include automations.yaml
 script: !include scripts.yaml
 scene: !include scenes.yaml
 
-media_extractor:
-
 sensor:
   - platform: time_date
     display_options:
