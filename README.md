@@ -66,7 +66,7 @@ Follow steps 9-10 as-is, but replace the automation.yaml file with the following
 
 ## automation.yaml
 
-```
+```yaml
 - id: '1517693010922'
   alias: Fajr Adhan
   trigger:
