@@ -32,31 +32,31 @@ sensor:
       
   - platform: scrape
     name: "Fajr Time"
-    resource: "https://namazvakitleri.diyanet.gov.tr/tr-TR/11035"
+    resource: "https://namazvakitleri.diyanet.gov.tr/tr-TR/11035/dresden-icin-namaz-vakti"
     select: "#today-pray-times-row > div:nth-child(1) > div > div.tpt-time"
     scan_interval: 10800
     
   - platform: scrape
     name: "Duhr Time"
-    resource: "https://namazvakitleri.diyanet.gov.tr/tr-TR/11035"
+    resource: "https://namazvakitleri.diyanet.gov.tr/tr-TR/11035/dresden-icin-namaz-vakti"
     select: "#today-pray-times-row > div:nth-child(3) > div > div.tpt-time"
     scan_interval: 10800
     
   - platform: scrape
     name: "Asr Time"
-    resource: "https://namazvakitleri.diyanet.gov.tr/tr-TR/11035"
+    resource: "https://namazvakitleri.diyanet.gov.tr/tr-TR/11035/dresden-icin-namaz-vakti"
     select: "#today-pray-times-row > div:nth-child(4) > div > div.tpt-time"
     scan_interval: 10800
     
   - platform: scrape
     name: "Maghreb Time"
-    resource: "https://namazvakitleri.diyanet.gov.tr/tr-TR/11035"
+    resource: "https://namazvakitleri.diyanet.gov.tr/tr-TR/11035/dresden-icin-namaz-vakti"
     select: "#today-pray-times-row > div:nth-child(5) > div > div.tpt-time"
     scan_interval: 10800
     
   - platform: scrape
     name: "Isha Time"
-    resource: "https://namazvakitleri.diyanet.gov.tr/tr-TR/11035"
+    resource: "https://namazvakitleri.diyanet.gov.tr/tr-TR/11035/dresden-icin-namaz-vakti"
     select: "#today-pray-times-row > div:nth-child(6) > div > div.tpt-time"
     scan_interval: 10800
    
