@@ -25,29 +25,27 @@ scene: !include scenes.yaml
 
 multiscrape:
   - name: Adhan Scraper
-    log_response: true
-    resource: "https://www.namaztakvimi.com/almanya/dresden-ezan-vakti.html"
+    resource: "https://www.huzursayfasi.com/namaz-vakitleri/dresden-namaz-vakitleri.html"
     scan_interval: 10800
     sensor:
       - unique_id: fajr_adhan_time
         name: "Fajr Time"
-        select: "#content > table > tr:nth-child(2) > td:nth-child(2)"
+        select: "body > div > div.left > section:nth-child(1) > div > table > tbody > tr:nth-child(2) > td:nth-child(1)"
       - unique_id: shorouk_adhan_time
         name: "Shorouk Time"
-        select: "#content > table > tr:nth-child(2) > td:nth-child(3)"
+        select: "body > div > div.left > section:nth-child(1) > div > table > tbody > tr:nth-child(2) > td:nth-child(2)"
       - unique_id: duhr_adhan_time
         name: "Duhr Time"
-        select: "#content > table > tr:nth-child(2) > td:nth-child(4)"
+        select: "body > div > div.left > section:nth-child(1) > div > table > tbody > tr:nth-child(2) > td:nth-child(3)"
       - unique_id: asr_adhan_time
         name: "Asr Time"
-        select: "#content > table > tr:nth-child(2) > td:nth-child(5)"
+        select: "body > div > div.left > section:nth-child(1) > div > table > tbody > tr:nth-child(2) > td:nth-child(4)"
       - unique_id: maghreb_adhan_time
         name: "Maghreb Time"
-        select: "#content > table > tr:nth-child(2) > td:nth-child(6)"
+        select: "body > div > div.left > section:nth-child(1) > div > table > tbody > tr:nth-child(2) > td:nth-child(5)"
       - unique_id: isha_adhan_time
         name: "Isha Time"
-        select: "#content > table > tr:nth-child(2) > td:nth-child(7)"
-
+        select: "body > div > div.left > section:nth-child(1) > div > table > tbody > tr:nth-child(2) > td:nth-child(6)"
 
 sensor:
   - platform: time_date
